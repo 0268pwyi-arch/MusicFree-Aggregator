@@ -4,15 +4,15 @@
     "name": "网易云音乐 免费源",
     "version": "1.0.0",
     "js": "https://cdn.jsdelivr.net/gh/0268pwyi-arch/MusicFreeHub/netease.js",
-    "description": "网易云音乐 免费 搜索 & 播放 & 歌单 & 歌词",
+    "description": "网易云音乐 免费 搜索/播放/歌单/歌词",
     "author": "ChatGPT"
   },
   {
     "platform": "qqmusic",
-    "name": "QQ 音乐 免费源",
+    "name": "QQ音乐 免费源",
     "version": "1.0.0",
     "js": "https://cdn.jsdelivr.net/gh/0268pwyi-arch/MusicFreeHub/qq.js",
-    "description": "QQ音乐 免费 搜索 & 播放 & 歌词",
+    "description": "QQ音乐 免费 搜索/播放/歌词",
     "author": "ChatGPT"
   },
   {
@@ -20,7 +20,7 @@
     "name": "酷狗音乐 免费源",
     "version": "1.0.0",
     "js": "https://cdn.jsdelivr.net/gh/0268pwyi-arch/MusicFreeHub/kugou.js",
-    "description": "酷狗音乐 免费 搜索 & 播放",
+    "description": "酷狗音乐 免费 搜索/播放",
     "author": "ChatGPT"
   },
   {
@@ -28,7 +28,7 @@
     "name": "哔哩哔哩 视频 音频",
     "version": "1.0.0",
     "js": "https://cdn.jsdelivr.net/gh/0268pwyi-arch/MusicFreeHub/bilibili.js",
-    "description": "B站 视频 音频 搜索 & 播放",
+    "description": "B站 视频 音频 搜索/播放",
     "author": "ChatGPT"
   }
 ]
