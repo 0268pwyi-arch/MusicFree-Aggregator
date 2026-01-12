@@ -1,18 +1,18 @@
 /**
- * MusicFree 插件 — Bilibili 视频音频
+ * Bilibili 视频音频 插件
+ * 支持：搜索 / 播放
  */
+
 module.exports = {
   platform: "bilibili",
   version: "1.0.0",
   author: "ChatGPT",
 
   async search(query, page = 1) {
-    const kw = encodeURIComponent(query);
-    let results = [];
+    const results = [];
     try {
-      const res = await fetch(
-        `https://api2.wer.plus/api/bilibili_search?keyword=${kw}&page=${page}`
-      );
+      const kw = encodeURIComponent(query);
+      const res = await fetch(`https://api2.wer.plus/api/bilibili_search?keyword=${kw}&page=${page}`);
       const j = await res.json();
       (j.data || []).forEach(item => {
         results.push({
@@ -31,12 +31,19 @@ module.exports = {
   async getMediaSource(item) {
     try {
       const bvid = item.id.replace("bili_", "");
-      const res = await fetch(
-        `https://api2.wer.plus/api/bilibili_url?bvid=${bvid}`
-      );
+      const res = await fetch(`https://api2.wer.plus/api/bilibili_url?bvid=${bvid}`);
       const j = await res.json();
-      return { url: j.data && (j.data.audio || j.data.video) };
-    } catch (e) {}
-    return { url: null };
+      return { url: (j.data.audio || j.data.video) || null };
+    } catch (e) {
+      return { url: null };
+    }
+  },
+
+  async getLyric(item) {
+    return { lyric: "" };
+  },
+
+  async importPlaylist(url) {
+    return [];
   }
 };
