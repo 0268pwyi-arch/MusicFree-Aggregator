@@ -1,10 +1,10 @@
 [
   {
-    "platform": "CNMusicVideoAll",
-    "name": "全网音乐 + 视频音频聚合",
-    "version": "1.0.0",
+    "platform": "CNMusicSuper",
+    "name": "增强版音乐+排行榜+歌单聚合",
+    "version": "3.0.0",
     "js": "plugin.js",
-    "description": "聚合国内主流音乐平台和视频音频平台的搜索与播放插件（网易云/QQ/酷狗/酷我/B站等）",
-    "author": "纯人机"
+    "description": "支持搜索 / 四大排行榜 / 歌单 / 歌词 / 作者信息的免费音乐聚合插件",
+    "author": "贫道清玄"
   }
 ]
