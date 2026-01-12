@@ -3,8 +3,8 @@
     "platform": "CNMusicSuper",
     "name": "增强版音乐+排行榜+歌单聚合",
     "version": "3.0.0",
-    "js": "https://0268pwyi-arch.github.io/MusicFree-Aggregator/plugin.js",
-    "description": "支持搜索/排行榜/歌单/歌词/作者信息",
+    "js": "https://cdn.jsdelivr.net/gh/0268pwyi-arch/MusicFree-Aggregator/plugin.js",
+    "description": "支持搜索/排行榜/歌单/歌词/作者信息（音乐聚合插件）",
     "author": "贫道清玄"
   }
 ]
