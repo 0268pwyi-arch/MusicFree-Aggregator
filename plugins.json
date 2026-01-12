@@ -1,0 +1,10 @@
+[
+  {
+    "platform": "CNMusicVideo",
+    "name": "中国音乐+视频音频聚合",
+    "version": "1.0.0",
+    "js": "plugin.js",
+    "description": "聚合国内主流音乐和主流视频平台音频搜索与播放插件",
+    "author": "YourName"
+  }
+]
